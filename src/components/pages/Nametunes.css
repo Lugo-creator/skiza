@@ -1,0 +1,172 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    overflow:visible;
+}
+
+/* Heading Styling */
+h1{
+    background: linear-gradient(to right, #32CD32, #FFA500); /* Green to orange gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #32CD32; 
+    margin: 10px 0; 
+    text-align: center; 
+    line-height: 1.4; 
+}
+
+
+/* Search Bar Wrapper Styling */
+.search-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.search-bar:focus {
+    border-color: #32CD32;
+    box-shadow: 0 4px 10px rgba(50, 205, 50, 0.5);
+}
+
+/* Placeholder Styling */
+.search-bar::placeholder {
+    font-style: italic;
+    color: #999;
+}
+
+/* Wrapper for the Table to allow horizontal scrolling */
+.table-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+.nametune-table {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed; /* Auto layout for better responsiveness */
+}
+
+/* Table Header and Cell Styling */
+.nametune-table th,
+.nametune-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word; /* Prevent text overflow */
+    overflow: hidden;     /* Hide overflowing text */
+    width: 200px;
+}
+
+.nametune-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Table Links Styling */
+.nametune-table a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.nametune-table a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Table Rows */
+.nametune-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.nametune-table tr:hover {
+    background-color: #f1f1f1; /* Hover effect on rows */
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
+    .nametune-table {
+        table-layout: auto; /* Keep table responsive */
+    }
+
+    /* Mobile-Specific Text Sizes */
+    h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+        .search-bar {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .search-bar-wrapper {
+        padding: 15px;
+    }
+    h4 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+        margin: 8px 0; /* Adjust spacing */
+    }
+}
+
+/* Further Responsive Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+    .search-bar {
+        width: 95%;
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+    h4 {
+        font-size: 1rem; 
+    }
+}

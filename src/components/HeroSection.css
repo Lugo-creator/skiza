@@ -1,0 +1,171 @@
+/* Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Hbody {
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.heading-section {
+  margin: 50px auto;
+  width: 100%; /* Full width */
+  padding: 0 10px; /* Small padding */
+}
+
+.heading-section h1 {
+  color: orangered;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.hero-container > h1 {
+  color: #000;
+  font-size: 50px;
+  margin-top: -100px;
+}
+
+.search {
+  width: 30%; /* Full width for search on mobile */
+  margin-top: 20px;
+  margin-left: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px #000, -5px -5px 7px #000;
+}
+
+.search input {
+  width: 80%; /* Full width input */
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  color: #000;
+}
+
+.search i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.nametunes-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.nametunes-button-container img {
+  width: 90%;
+  max-width: 400px;
+}
+#slider, #slide {
+  width: 100vw; /* Full viewport width */
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of child elements */
+  scroll-snap-type: x mandatory; /* Enable snapping for better UX */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  padding: 0; /* Remove any extra padding */
+  margin: 0; /* Remove extra margins */
+}
+#slider h2, #slide h3{
+  position: absolute;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.slider-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-width: 960px) {
+  .heading-section h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .search {
+    width: 80%; /* Adjust width for medium screens */
+    margin-left: 20px;
+  }
+
+  .nametunes-button-container {
+    margin-top: 2rem;
+  }
+
+  .nametunes-button-container img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-top: 15px;
+  }
+
+  .heading-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .nametunes-button-container img {
+    width: 90%; /* Make the image smaller */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .nametunes-button-container img {
+    width: 90%;
+    max-width: 250px; /* Restrict image width */
+  }
+
+  .Hbody {
+    padding: 0;
+    margin: 0;
+  }
+   .heading-section {
+    padding: 0 10px; /* Consistent padding */
+  }
+  #slider, #slide {
+    width: 800vw; /* Ensure full width on smaller screens */
+    padding: 0;
+    margin: 0; /* Remove any default margin/padding */
+  }
+}

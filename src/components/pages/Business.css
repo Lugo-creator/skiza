@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.description {
+  width: 100%;
+  background: url('/public/images/back.jpg') center center/cover no-repeat;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bizlog {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 20px;
+}
+
+.biz-description {
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.biz-description h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.biz-description h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.biz-description p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.biz-button {
+  width: auto;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: green;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.biz-button:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+}
+
+.bronze {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 600px;
+  background-color: green;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 4px 4px 7px green, -4px -4px 7px green;
+}
+
+.bronze h1 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bronze p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.features h3 {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.features li {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 960px) {
+  .description {
+    height: auto;
+    padding: 20px;
+  }
+
+  .bizlog {
+    width: 150px;
+    height: 150px;
+  }
+
+  .biz-description {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .biz-description h3,
+  .biz-description h2,
+  .biz-description p {
+    font-size: 1.2rem;
+  }
+
+  .biz-button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .bronze {
+    width: 95%;
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .bronze h1 {
+    font-size: 1.5rem;
+  }
+
+  .bronze p,
+  .features li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    padding: 15px;
+    height: auto;
+  }
+
+  .bizlog {
+    width: 120px;
+    height: 120px;
+  }
+
+  .biz-description h2 {
+    font-size: 1.6rem;
+  }
+
+  .biz-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .bronze {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .bronze h1 {
+    font-size: 1.4rem;
+  }
+
+  .bronze p {
+    font-size: 1rem;
+  }
+
+  .features li {
+    font-size: 1rem;
+  }
+}

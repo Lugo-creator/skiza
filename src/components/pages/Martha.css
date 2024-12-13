@@ -1,0 +1,159 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+  margin-top: -10vh;  /* Responsive top margin */
+  text-align: center;
+  padding: 5vw;
+}
+
+.container h1 {
+  font-size: 4vw; /* Font size relative to viewport */
+  color: green;
+  margin: 20px auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.list-items {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.play {
+  background-color: green;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.list-items a {
+  font-size: 1.5vw; /* Font size relative to viewport */
+  color: #000;
+  margin-top: 10px;
+}
+
+.list-items a:hover {
+  color: green;
+}
+
+.pic {
+  margin: 5vh auto;
+  text-align: center;
+}
+
+.martha {
+  width: 20vw; /* Adjust image width relative to viewport */
+  height: 20vw; /* Adjust image height relative to viewport */
+  border-radius: 50%;
+}
+
+.download-btn {
+  height: 5vw;
+  width: 10vw;
+  margin-left: 1rem;
+}
+
+.download-btn img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 7px green, -5px -5px 7px green;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn img:hover {
+  box-shadow: 5px 5px 7px #FF5F1F, -5px -5px 7px #FF5F1F;
+  transform: scale(1.1);
+}
+
+/* Mobile/Tablet Adjustments */
+@media screen and (max-width: 960px) {
+  .container h1 {
+    font-size: 5vw; /* Slightly smaller for mid-range screens */
+    margin-left: 10vw;
+  }
+
+  .martha {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .list-items {
+    width: 90%;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-items a {
+    font-size: 3.5vw;
+    margin-top: 10px;
+  }
+
+  .download-btn {
+    height: 7vw;
+    width: 14vw;
+  }
+
+  .play {
+    width: 90%; /* Adjusted width for responsiveness */
+  }
+}
+
+/* Small Mobile Adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: -5vh;
+  }
+
+  .pic {
+    margin: 3vh auto;
+  }
+
+  .martha {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .list-items {
+    width: 100%;
+    margin: 5px auto;
+    margin-top: 20px;
+  }
+
+  .list-items a {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+
+  .download-btn {
+    height: 10vw;
+    width: 20vw;
+  }
+
+  .play {
+    width: 100%;
+  }
+}
